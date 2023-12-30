@@ -1,0 +1,66 @@
+.WrapperVolumenzeitAccount {
+  background-color: rgba(249, 250, 254, 1);
+  button {
+    padding: 15px;
+  }
+  .WrapTextAccount {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgba(115, 92, 255, 1);
+    text-align: center;
+    margin-bottom: 20px;
+    h1 {
+      color: rgba(255, 255, 255, 1);
+      margin: 0;
+      font-size: 42px;
+    }
+  }
+  .VolumenzeitAccount {
+    width: 50%;
+    margin: 0 auto;
+    .VolumenzeitAccountInfoText {
+      text-align: center;
+    }
+    .VolumenzeitAccountNavigation {
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        cursor: pointer;
+        color: #cfcfcf;
+        position: relative;
+        &:hover {
+          text-decoration: none; 
+        }
+
+        &:hover::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -2px; 
+          width: 40%;
+          height: 2px;
+          background-color: #735cff;
+          border-radius: 5px;
+        }
+        &.active {
+          color: #000;
+        }
+      }
+    }
+    .VolumenzeitAccountInfo {
+      background-color: white;
+      margin-bottom: 25px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 10px;
+    }
+    .VolumenzeitAccountInfoButton {
+      text-align: center;
+      button {
+        width: 30%;
+      }
+    }
+  }
+}

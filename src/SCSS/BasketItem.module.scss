@@ -1,0 +1,50 @@
+.WrapperItemShipping{
+  width: 40%;
+.WrapBasketItem {
+  
+  text-align: center;
+  padding: 25px;
+  border: 1px solid;
+  border-color: rgba(234, 236, 245, 1);
+  border-radius: 5px;
+  button {
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    p{color: white;}
+  }
+  margin-bottom: 50px;
+  .WrapperItem {
+    display: flex;
+    span {
+      height: 10%;
+      padding: 10px;
+      border: 1px solid;
+      border-radius: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    padding: 20px;
+    background-color: white;
+    border-bottom: 2px solid rgba(236, 237, 241, 1);
+    border-top: 2px solid rgba(236, 237, 241, 1);
+    .WrapImgItem {
+      width: 30%;
+      align-items: center;
+      img {
+        margin: 0;
+        width: 100%;
+        min-width: 182px;
+      }
+    }
+    .WrapColor {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .WrapperYourCartAbout {
+      margin-left: 50px;
+    }
+  }
+}
+}

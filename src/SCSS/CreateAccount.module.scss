@@ -1,0 +1,37 @@
+.CreateAccountWrapper {
+  input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(234, 236, 245, 1);
+  }
+  button {
+    padding: 20px;
+    width: 30%;
+  }
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  .WrapperInput2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 52%;
+    input {
+      width: calc(50% - 25px);
+    }
+  }
+  .SignUpWrapper {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+    p {
+      text-wrap: nowrap;
+      margin-left: 5px;
+    }
+    input {
+      margin: 0;
+    }
+  }
+}

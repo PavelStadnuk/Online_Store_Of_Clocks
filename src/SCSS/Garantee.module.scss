@@ -1,0 +1,13 @@
+.WrapGarantees{
+    background-color: black;
+    display: flex;
+    .WrapGarantee{
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        h3{margin: 0; color: white;}
+        .WrapGaranteeText{
+            margin-left: 15px;
+        }
+    }
+}

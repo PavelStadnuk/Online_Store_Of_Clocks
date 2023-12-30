@@ -1,0 +1,59 @@
+.WrapTextProducts {
+  padding: 60px 0 50px 140px;
+  background-color: rgba(115, 92, 255, 1);
+  h1 {
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    font-size: 42px;
+  }
+  p {
+    color: rgba(255, 255, 255, 1);
+    margin-top: 10px;
+  }
+}
+.WrapProduct {
+    margin: 0 auto;
+    align-content: center;
+    display: flex;
+    button{padding: 20px;}
+    width: 70%;
+    padding-top: 30px;
+  .WrapPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    
+    .WrapPhoto{
+        width: 48%;
+        margin-right: 10px;
+        img{
+            width: 100%;
+        }
+    }
+  }
+  .PriceOrder {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .AROnline {
+    width: 100%;
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    margin-bottom: 20px;
+  }
+  .Design{
+    width: 100%;
+  }
+ 
+  .Specifications {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .Specification{
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+    }
+  }
+}

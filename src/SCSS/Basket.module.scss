@@ -1,0 +1,31 @@
+.WrapBasket {
+  background-color: rgba(249, 250, 254, 1);
+
+  .WrapTextCheckout {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgba(115, 92, 255, 1);
+    text-align: center;
+    h1 {
+      color: rgba(255, 255, 255, 1);
+      margin: 0;
+      font-size: 42px;
+    }
+  }
+  .WrapBasketInfoItem {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 40px;
+  }
+  .WrapBasketShippingPayment {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 40px;
+  }
+}

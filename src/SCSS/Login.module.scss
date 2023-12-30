@@ -1,0 +1,43 @@
+.LoginWrapper{
+    input{
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(234, 236, 245, 1);
+    }
+    button{
+        padding: 20px;
+        width: 30%;
+    }
+    .RememberMePasswordWrapper{
+        margin: 0 auto;
+        width: 53%;
+        display: flex;
+        justify-content: space-between;
+        .RememberMeWrapper{
+            display: flex;
+            align-items: center;
+            p{text-wrap: nowrap; margin-left: 5px;}
+            input{
+                margin: 0;
+            }
+        }
+    }
+    .ExpressSignIn{
+        display: flex;
+        justify-content: center;
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin-right: 5px;
+                width: 20px;
+                height: 20px;
+            }
+            align-items: center;
+            margin-left: 5px;
+            background-color: black;
+        }
+    }
+}

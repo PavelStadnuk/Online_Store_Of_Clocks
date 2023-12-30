@@ -1,0 +1,42 @@
+.WrapperSlick {
+  margin-top: 50px;
+  margin-left: 25px;
+  .WrapperImg {
+    position: relative;
+    overflow: hidden;
+    img{width: 100%;}
+    .ContainerOverflow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 93%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      background-color: rgba(115, 92, 255, 0.85);
+      transition: opacity 0.3s ease;
+      flex-direction: column;
+  
+      img {
+        width: 30%;
+      }
+  
+      p {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  
+    &:hover .ContainerOverflow {
+      opacity: 1;
+    }
+  }
+  .WrapperSlickText {
+    text-align: center;
+  }
+}
+@media (max-width: 993px) {
+}

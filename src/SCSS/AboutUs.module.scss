@@ -1,0 +1,15 @@
+.WrapperAboutUs{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .AboutUsText{
+        width: 30%;
+        p{margin-top: 40px;}
+    }
+    .VideoContainer{
+        width: 30%;
+        margin-left: 110px;
+    }
+}

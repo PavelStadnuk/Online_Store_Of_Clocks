@@ -1,0 +1,144 @@
+.WrapperDesignYourWatch {
+  margin-top: 150px;
+  .WrapperMapDesign {
+    clip-path: polygon(46% 0, 50% 6%, 54% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    text-align: center;
+    background-color: rgba(115, 92, 255, 1);
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 1);
+    .Wrap {
+      width: 20%;
+      position: relative;
+      //   margin-left: 20px;
+      p {
+        color: rgba(255, 255, 255, 1);
+        font-size: 12px;
+      }
+      &::after {
+        content: "";
+        z-index: 1;
+        display: inline-block;
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 3px;
+        background-color: rgba(255, 255, 255, 1);
+        top: 35%;
+        left: 56%;
+        transform: translateX(-1px) translateY(-50%);
+      }
+
+      &:nth-child(4) {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    button {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 1);
+      margin-bottom: 145px;
+      margin-top: 60px;
+    }
+  }
+  .MapDesignNumber {
+    margin-top: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: fit-content;
+
+    .OuterCircle {
+      display: flex;
+      width: 86px;
+      height: 86px;
+      position: relative;
+      border-radius: 50%;
+      border: 1px solid;
+      border-color: rgba(255, 255, 255, 0.2);
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      margin: 0 auto;
+      justify-content: center;
+      z-index: 2;
+      span {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid;
+        border-radius: 50%;
+        font-family: "Space Age Cyrillic", sans-serif;
+
+        font-size: 32px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .WrapperOurMission {
+    margin-top: -65px;
+    width: 100%;
+    display: flex;
+    clip-path: polygon(
+      92% 0,
+      100% 11%,
+      100% 100%,
+      33% 100%,
+      24% 92%,
+      12% 92%,
+      0 92%,
+      0% 70%,
+      0% 35%,
+      0 0
+    );
+    .WrapperOurMissionImage {
+      width: 25%;
+      background-image: url(../Assets/Image/ImageMission.png);
+      background-size: cover;
+    }
+    .WrapperOurMissionText {
+      width: 75%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      h1 {
+        color: rgba(255, 255, 255, 1);
+        font-size: 42px;
+        margin-bottom: 40px;
+      }
+      background-color: rgba(0, 0, 0, 1);
+      button {
+        padding: 20px;
+      }
+      .WrapperOurMissionTextBox {
+        margin-bottom: 100px;
+        margin-top: 100px;
+        width: 30%;
+        p span {
+          padding-top: 20px;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 993px) {
+  .MapDesignNumber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Wrap {
+    margin-bottom: 60px;
+    &::after {
+      width: 50% !important;
+      transform: translateX(-60px) translateY(120px) rotate(90deg) !important;
+    }
+  }
+}

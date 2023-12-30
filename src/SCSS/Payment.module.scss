@@ -1,0 +1,46 @@
+.WrapPayment {
+//   width: 50%;
+  margin-right: 50px;
+  padding: 20px;
+  align-items: center;
+  align-content: center;
+  border: 1px solid;
+  border-color: rgba(234, 236, 245, 1);
+  border-radius: 5px;
+  button{padding: 20px;width: 100%;}
+  p{text-align: center;}
+  .WrapCard {
+    h3 {
+      margin-bottom: 5px;
+      margin-left: 10px;
+    }
+   
+    img {
+      margin-left: 10px;
+    }
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+  .WrapInput {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    input {
+      margin-top: 10px;
+      border-color: rgba(234, 236, 245, 1);
+      border-radius: 5px;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      
+    }
+    .WrapInput2{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      input{width: calc(50%-10px);}
+    }
+  }
+}

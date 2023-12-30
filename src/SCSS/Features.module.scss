@@ -1,0 +1,158 @@
+.WrapperFeatures {
+  margin-top: 75px;
+  text-align: center;
+  .Features {
+    position: relative;
+
+    .IndividualStyle {
+      width: 11%;
+      position: absolute;
+      top: 0;
+      // left:;
+      z-index: 10;
+
+      .IndividualStyleBox {
+        position: absolute;
+        top: 10px;
+        right: -30px;
+
+        .cirсleTips_center {
+          &::before {
+            width: 97px;
+          }
+
+          &::after {
+            top: 130px;
+            left: 64px;
+            width: 201px;
+            transform: rotate(38deg);
+            transform-origin: top right;
+          }
+        }
+      }
+    }
+    .HighQualityComponents {
+      width: 13%;
+      position: absolute;
+      bottom: 0;
+      // left: 225px;
+      .HighQualityComponentsBox {
+        position: absolute;
+        top: 15px;
+        right: -30px;
+        .cirсleTips_center {
+          &::before {
+            width: 30px;
+          }
+
+          &::after {
+            top: 8px;
+            left: -111px;
+            width: 153px;
+            transform: rotate(151deg);
+            transform-origin: top right;
+          }
+        }
+      }
+    }
+    .FeaturesWatchesPhoto {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .FeaturesText {
+      width: 10%;
+      position: absolute;
+      top: 0;
+      right: 160px;
+      .FeaturesTextBox {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        .cirсleTips_center {
+          &::before {
+            width: 74px;
+            left: -73px;
+          }
+
+          &::after {
+            top: 5px;
+            left: -208px;
+            width: 138px;
+            transform: rotate(324deg);
+            transform-origin: top right;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cirсleTips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(115, 92, 255, 0.1);
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+
+  &_middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(115, 92, 255, 0.1);
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+  }
+
+  &_center {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(115, 92, 255, 1);
+    border-radius: 10px;
+    width: 14px;
+    height: 14px;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: grey;
+      height: 1px;
+    }
+
+    &::before {
+      left: 14px;
+    }
+  }
+}
+@media (max-width: 993px) {
+  .circleTips_center::before,
+  .circleTips_center::after,
+  .Features,
+  .IndividualStyle,
+  .HighQualityComponents,
+  .FeaturesWatchesPhoto,
+  .FeaturesText {
+    width: 100% !important;;
+    position: static !important;
+  }
+  .WrapperFeatures {
+    text-align: center;
+    width: 50%;
+    span {
+      display: none;
+    }
+    .FeaturesWatchesPhoto{ width: 20% !important; img{}}
+  }
+  .IndividualStyleBox,
+  .HighQualityComponentsBox,
+  .FeaturesTextBox {
+    position: static !important;
+  }
+}

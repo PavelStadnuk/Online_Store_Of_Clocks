@@ -1,0 +1,84 @@
+.AllProducts {
+  margin-left: 50px;
+  .SortBy {
+    margin-top: 40px;
+    width: 92%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .WrapperProducts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .WrapperProduct {
+      margin-left: 15px;
+      margin-top: 50px;
+      width: 30%;
+      min-width: 350px;
+      text-align: center;
+      .WrapperImgProduct {
+        position: relative;
+        overflow: hidden;
+      
+        img {
+          width: 100%;
+        }
+      
+        .ContainerOverflow {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          background-color: rgba(115, 92, 255, 0.85);
+          transition: opacity 0.3s ease;
+          flex-direction: column;
+      
+          img {
+            width: 30%;
+          }
+      
+          p {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+          }
+        }
+      
+        &:hover .ContainerOverflow {
+          opacity: 1;
+        }
+      }
+      
+    }
+  }
+  .WrapperButtonPagination {
+    margin-top: 80px;
+    padding-left: 65px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    button {
+      padding: 20px;
+    }
+    .Pagination {
+      span {
+        cursor: pointer;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: #f9fafe;
+        padding: 10px;
+        margin-left: 5px;
+        &.active {
+          background-color: rgba(115, 92, 255, 1);
+          color: #f9fafe;
+        }
+      }
+    }
+  }
+}
