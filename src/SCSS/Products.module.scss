@@ -1,119 +1,139 @@
 .WrapTextProducts {
-  padding: 60px 0 50px 140px;
-  background-color: rgba(115, 92, 255, 1);
-  h1 {
-    color: rgba(255, 255, 255, 1);
-    margin: 0;
-    font-size: 42px;
-  }
-  p {
-    color: rgba(255, 255, 255, 1);
-    margin-top: 10px;
-  }
+    padding: 60px 0 50px 15%;
+    background-color: rgba(115, 92, 255, 1);
+    h1 {
+        color: rgba(255, 255, 255, 1);
+        margin: 0;
+        font-size: 42px;
+    }
+    p {
+        color: rgba(255, 255, 255, 1);
+        margin-top: 10px;
+    }
+    @media (max-width: 365px) {
+        padding-left: 6%;
+    }
+    @media (max-width: 326px) {
+        padding-left: 3%;
+    }
 }
 .WrapperProducts {
-  display: flex;
-  .AllFiltersWrapper {
-    background-color: #f9fafe;
-    padding-left: 20px;
-    padding-bottom: 30px;
-    height: 50%;
-    
-    p {
-      color: black;
-    }
-    .SearchWrap{margin-bottom: 16px; input{height: 37px; margin-right: 15px;}}
-    .SelectWrap {
-      border-top: 1px solid;
-      border-bottom: 1px solid;
-      border-color: rgba(185, 183, 188, 0.2);
-      .SelectWrapText {
+    display: flex;
+    .AllFiltersWrapper {
+        background-color: #f9fafe;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        height: 50%;
+
         p {
-          color: rgba(147, 147, 147, 1);
+            color: black;
         }
-      }
+        .SearchWrap {
+            margin-bottom: 16px;
+            input {
+                height: 37px;
+                margin-right: 15px;
+                @media (max-width: 365px) {
+                margin-right: 5px;
+            }
+            }
+        
+        }
+        .SelectWrap {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            border-color: rgba(185, 183, 188, 0.2);
+            .SelectWrapText {
+                p {
+                    color: rgba(147, 147, 147, 1);
+                }
+            }
+        }
+        .WrapPriceRange {
+            margin-bottom: 16px;
+            .PriceRange {
+                display: flex;
+                input {
+                    width: 30%;
+                }
+                p {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .WrapCaseColor {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            border-color: rgba(185, 183, 188, 0.2);
+            padding-bottom: 16px;
+            button {
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .Black {
+                background: linear-gradient(
+                    180deg,
+                    rgb(85, 85, 85) 0%,
+                    rgb(9.56, 9.56, 9.56) 100%
+                );
+            }
+            .White {
+                background: linear-gradient(
+                    180deg,
+                    rgb(227.37, 227.37, 227.37) 0%,
+                    rgb(122.52, 130.72, 143.44) 100%
+                );
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .Blue {
+                background: linear-gradient(
+                    180deg,
+                    rgb(88.46, 177.89, 206.13) 0%,
+                    rgb(2, 60, 150) 100%
+                );
+            }
+        }
+        .StrapColors {
+            button {
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .Orange {
+                background: linear-gradient(
+                    180deg,
+                    rgb(211.44, 145.39, 55.5) 0%,
+                    rgb(184.88, 83.19, 113.48) 100%
+                );
+            }
+            .Green {
+                background: linear-gradient(
+                    180deg,
+                    rgb(45.24, 155.13, 134.68) 0%,
+                    rgb(175.4, 40.59, 202.94) 100%
+                );
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .Blue {
+                background: linear-gradient(
+                    180deg,
+                    rgb(33.5, 132.35, 206.13) 0%,
+                    rgb(143.92, 31.75, 173.19) 100%
+                );
+                margin-right: 10px;
+            }
+            .Black {
+                background: linear-gradient(
+                    180deg,
+                    rgb(112.34, 120.36, 132.81) 0%,
+                    rgb(54.19, 54.19, 54.19) 100%
+                );
+            }
+        }
+        @media (max-width: 350px) {
+            padding-left: 5px;
+        }
     }
-    .WrapPriceRange{
-      margin-bottom: 16px;
-    .PriceRange {
-      display: flex;
-      input {
-        width: 30%;
-      }
-      p {
-        margin-left: 5px;
-        margin-right: 5px;
-      }
-    }}
-    .WrapCaseColor {
-      border-top: 1px solid;
-      border-bottom: 1px solid;
-      border-color: rgba(185, 183, 188, 0.2);
-      padding-bottom: 16px;
-      button {
-        padding: 10px;
-        border-radius: 5px;
-      }
-      .Black {
-        background: linear-gradient(
-          180deg,
-          rgb(85, 85, 85) 0%,
-          rgb(9.56, 9.56, 9.56) 100%
-        );
-      }
-      .White {
-        background: linear-gradient(
-          180deg,
-          rgb(227.37, 227.37, 227.37) 0%,
-          rgb(122.52, 130.72, 143.44) 100%
-        );
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-      .Blue {
-        background: linear-gradient(
-          180deg,
-          rgb(88.46, 177.89, 206.13) 0%,
-          rgb(2, 60, 150) 100%
-        );
-      }
-    }
-    .StrapColors {
-      button {
-        padding: 10px;
-        border-radius: 5px;
-      }
-      .Orange {
-        background: linear-gradient(
-          180deg,
-          rgb(211.44, 145.39, 55.5) 0%,
-          rgb(184.88, 83.19, 113.48) 100%
-        );
-      }
-      .Green {
-        background: linear-gradient(
-          180deg,
-          rgb(45.24, 155.13, 134.68) 0%,
-          rgb(175.4, 40.59, 202.94) 100%
-        );
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-      .Blue {
-        background: linear-gradient(
-          180deg,
-          rgb(33.5, 132.35, 206.13) 0%,
-          rgb(143.92, 31.75, 173.19) 100%
-        );
-        margin-right: 10px;
-      }
-      .Black {
-        background: linear-gradient(
-          180deg,
-          rgb(112.34, 120.36, 132.81) 0%,
-          rgb(54.19, 54.19, 54.19) 100%
-        );
-      }
-    }
-  }
 }

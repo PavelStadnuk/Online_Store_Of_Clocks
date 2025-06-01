@@ -8,6 +8,7 @@
     color: rgba(255, 255, 255, 1);
     .Wrap {
       width: 20%;
+      min-width: 192px;
       position: relative;
       //   margin-left: 20px;
       p {
@@ -32,6 +33,7 @@
           display: none;
         }
       }
+  
     }
     button {
       padding: 20px;
@@ -103,10 +105,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
       font-size: 14px;
       h1 {
         color: rgba(255, 255, 255, 1);
-        font-size: 42px;
+        
         margin-bottom: 40px;
       }
       background-color: rgba(0, 0, 0, 1);
@@ -114,6 +117,11 @@
         padding: 20px;
       }
       .WrapperOurMissionTextBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
         margin-bottom: 100px;
         margin-top: 100px;
         width: 30%;

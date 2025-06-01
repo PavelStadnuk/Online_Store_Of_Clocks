@@ -47,8 +47,9 @@ const YourCart = ({ date, setYourCartVisible, totalPrice }) => {
                 <span style={{ backgroundColor: item.StrapColors }} />
                 <p>Strap Colors</p>
               </div>
+              
             </div>
-            <div>
+            <div className={style.traschWrap}>
               <img
                 src={trasch}
                 alt="Delete"
@@ -88,7 +89,7 @@ const YourCart = ({ date, setYourCartVisible, totalPrice }) => {
           </div>
           <div className={style.WrapYourCartPrice}>
             <p>Discount 15% Off</p>
-            <h1>${Discount}</h1>
+            <h1>${Discount.toFixed(2)}</h1>
           </div>
           <div className={style.WrapYourCartPrice}>
             <p>Grand Total</p>

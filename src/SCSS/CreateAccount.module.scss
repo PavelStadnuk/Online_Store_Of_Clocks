@@ -1,4 +1,9 @@
 .CreateAccountWrapper {
+    h1{
+        @media (max-width: 405px) {
+            font-size: 12px;
+}
+    }
   input {
     width: 50%;
     padding: 10px;
@@ -24,13 +29,14 @@
   .SignUpWrapper {
     display: flex;
     align-items: center;
-    width: 40%;
+    justify-content: center;
+    gap: 5px;
     margin: 0 auto;
     p {
-      text-wrap: nowrap;
       margin-left: 5px;
     }
     input {
+        width: auto;
       margin: 0;
     }
   }

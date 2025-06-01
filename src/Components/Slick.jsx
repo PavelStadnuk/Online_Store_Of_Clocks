@@ -11,7 +11,7 @@ const Slick = ({ date, settings }) => {
   const AddWatch=(item)=>{dispatch(addItemToCart(item))}
   return (
     <div>
-      <Slider {...settings}>
+      <Slider {...settings} clsdassName={style.Slick}>
         {date.map((element) => {
           return (
             <div className={style.WrapperSlick}>

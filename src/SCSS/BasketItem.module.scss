@@ -1,7 +1,7 @@
 .WrapperItemShipping{
-  width: 40%;
+//   width: 40%;
 .WrapBasketItem {
-  
+  min-width: 263px;
   text-align: center;
   padding: 25px;
   border: 1px solid;
@@ -31,10 +31,11 @@
     .WrapImgItem {
       width: 30%;
       align-items: center;
+      min-width: 182px;
       img {
         margin: 0;
         width: 100%;
-        min-width: 182px;
+        
       }
     }
     .WrapColor {
@@ -44,7 +45,16 @@
     }
     .WrapperYourCartAbout {
       margin-left: 50px;
+      @media (max-width: 930px) {
+        margin-left: 0;
+}
     }
+        @media (max-width: 930px) {
+        gap: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
   }
 }
 }

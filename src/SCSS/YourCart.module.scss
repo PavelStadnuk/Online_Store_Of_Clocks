@@ -1,92 +1,125 @@
 .WrapperYourCarts {
-  position: absolute;
-  text-align: center;
-  top: 0;
-  right: 0;
-  z-index: 100;
-  span {
-    height: 10%;
-    padding: 10px;
-    border: 1px solid;
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .WrapName {
-    background-color: rgba(249, 250, 254, 1);
-    display: flex;
-    justify-content: space-between;
+    position: absolute;
     text-align: center;
-    h1 {
-      width: 90%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    span {
+        height: 10%;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    padding-bottom: 10px;
-    padding-right: 10px;
-  }
-  .WrapperYourCart {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: white;
-    border-bottom: 2px solid rgba(236, 237, 241, 1);
-    border-top: 2px solid rgba(236, 237, 241, 1);
-    .WrapImgItem {
-      width: 30%;
-      align-items: center;
-      img {
-        margin: 0;
-        width: 100%;
-        min-width: 182px;
-      }
-    }
-    .WrapColor {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .WrapperYourCartAbout{
-      margin-left: 50px;
-    }
-  }
-  .WrapYourCartText {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: white;
-    border-bottom: 2px solid rgba(236, 237, 241, 1);
-    button {
-      padding: 20px;
-    }
-    h1 {
-      margin-left: 5px;
-    }
-    .MatchingItemWrap {
-      margin-top: 30px;
-      display: flex;
-      justify-content: space-between;
-      .ItemWrap {
-        display: flex;
-        padding-left: 10px;
-        padding-right: 10px;
-        max-width: 300px;
-        .ItemPhotoWrap{img{width: 100%;}}
-        .AddItemWrap{display: flex;img{margin-right: 10px;}}
-        .MatchingItemWrapText{margin-left: 30px; h1{margin: 5px 5px 5px 0; }}
-      }
-    }
-    .WrapYourCartPrices {
-      margin-top: 30px;
-
-      background-color: rgba(249, 250, 254, 1);
-      .WrapYourCartPrice {
-        margin-left: 40px;
-        margin-right: 20px;
-        margin-bottom: 30px;
+    .WrapName {
+        background-color: rgba(249, 250, 254, 1);
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        border-bottom: 2px solid rgba(236, 237, 241, 1);
-      }
+        text-align: center;
+        h1 {
+            width: 90%;
+        }
+        padding-bottom: 10px;
+        padding-right: 10px;
     }
-  }
+    .WrapperYourCart {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 20px;
+        background-color: white;
+        border-bottom: 2px solid rgba(236, 237, 241, 1);
+        border-top: 2px solid rgba(236, 237, 241, 1);
+        .WrapImgItem {
+            // width: 30%;
+            align-items: center;
+            max-width: 300px;
+            img {
+                margin: 0;
+                width: 100%;
+                min-width: 120px;
+            }
+        }
+        .WrapColor {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .WrapperYourCartAbout {
+        
+            @media (max-width: 408px) {
+                h1 {
+                    font-size: 16px;
+                }
+            }
+            
+        }
+        .traschWrap {
+                position: absolute;
+                top:5%;
+                right:7%;
+            }
+    }
+    .WrapYourCartText {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: white;
+        border-bottom: 2px solid rgba(236, 237, 241, 1);
+        button {
+            padding: 20px;
+        }
+        h1 {
+            margin-left: 5px;
+        }
+        .MatchingItemWrap {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .ItemWrap {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .ItemPhotoWrap {
+                    img {
+                        width: 60%;
+                        min-width: 60px;
+                    }
+                }
+                .AddItemWrap {
+                    display: flex;
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+                .MatchingItemWrapText {
+                    margin-left: 30px;
+                    h1 {
+                        margin: 5px 5px 5px 0;
+                    }
+                }
+            }
+        }
+        .WrapYourCartPrices {
+            margin-top: 30px;
+
+            background-color: rgba(249, 250, 254, 1);
+            .WrapYourCartPrice {
+                margin-left: 40px;
+                margin-right: 20px;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: center;
+                border-bottom: 2px solid rgba(236, 237, 241, 1);
+            }
+        }
+    }
 }

@@ -15,11 +15,12 @@ const AboutUs = () => {
       </div>
       <div className={style.VideoContainer}>
         <iframe
-          width="560"
           height="315"
           src="https://www.youtube.com/embed/FEZz928k3GM"
           frameBorder="0"
           allowFullScreen
+          style={{ width: '100%' }}
+
         />
       </div>
     </div>

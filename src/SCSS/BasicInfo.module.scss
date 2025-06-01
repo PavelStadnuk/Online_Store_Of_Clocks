@@ -1,34 +1,43 @@
-.WrapperInfoCart{
-  width: 50%;
-  text-align: center;
-.BasicInfoWrap {
-  margin-right: 50px;
-  padding: 20px;
-  border: 1px solid;
-  border-color: rgba(234, 236, 245, 1);
-  border-radius: 5px;
-  button{width: 86%;padding: 20px;margin-top: 10px;}
-  margin-bottom: 50px;
-  .BasicInfoWrapInput {
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    margin: 0 auto;
-    width: 80%;
-    input {
-      margin-top: 10px;
-      border-color: rgba(234, 236, 245, 1);
-      border-radius: 5px;
-      padding: 20px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    .BasicInfoWrapInput2{
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      input{width: calc(50%-10px);}
-    }
-  }
+.WrapperInfoCart {
+	width: 50%;
+    min-width: 263px;
+	text-align: center;
+	.BasicInfoWrap {
+		// margin-right: 50px;
+		padding: 20px;
+		border: 1px solid;
+		border-color: rgba(234, 236, 245, 1);
+		border-radius: 5px;
+		button {
+			width: 86%;
+			padding: 20px;
+			margin-top: 10px;
+		}
+		margin-bottom: 50px;
+		.BasicInfoWrapInput {
+			text-align: center;
+		
+			margin: 0 auto;
+			width: 80%;
+			input {
+				margin-top: 10px;
+				border-color: rgba(234, 236, 245, 1);
+				border-radius: 5px;
+				padding: 20px;
+				width: 100%;
+				box-sizing: border-box;
+			}
+			.BasicInfoWrapInput2 {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				input {
+					width: calc(50% - 10px);
+				}
+			}
+		}
+            @media (max-width: 786px) {
+        margin-right: 0;
 }
+	}
 }

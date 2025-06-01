@@ -1,90 +1,154 @@
-
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 .WrapperHeader {
-  display: flex;
-  // align-content: center;
-  align-items: center;
-  padding-left: 155px;
-  justify-content: space-between;
-  padding-right: 65px;
-  position: relative;
-  background: rgba(249, 250, 254, 1);
-  button{padding: 20px;}
-  .HeaderLogo {
-    font-family: "Space Age Cyrillic", sans-serif;
-  }
-  .WrapNavigation {
+    padding: 10px;
     display: flex;
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    ul {
-      display: flex;
-      margin-right: 30px;
+    align-content: center;
+    align-items: center;
+    padding-left: 155px;
+    justify-content: space-between;
+    padding-right: 65px;
+    position: relative;
+    background: rgba(249, 250, 254, 1);
 
-      li {
-        margin-left: 30px;
-        list-style-type: none;
-        cursor: pointer;
-        color: #cfcfcf;
-        position: relative;
-        &:hover {
-          text-decoration: none; /* Відміняємо вбудований підкреслювання */
-        }
-
-        &:hover::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: -2px; /* Регулюйте відстань підкреслення від тексту */
-          width: 40%;
-          height: 2px;
-          background-color: #735cff;
-          border-radius: 5px;
-        }
-        &.active {
-          color: #000;
-        }
-      }
+    button {
+        padding: 20px;
     }
-    .WrapImages {
-      display: flex;
-      align-items: center;
-      img {
-        margin-left: 30px;
-      }
-      .UserMenu {
-        text-align: center;
-        position: absolute;
-        top: 90%;
-        right: 8%;
+    .HeaderLogo {
+        font-family: 'Space Age Cyrillic', sans-serif;
+        @media (max-width: 360px) {
+            display: none;
+        }
+    }
+    .WrapNavigation {
         display: flex;
-        flex-direction: column;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        padding: 30px;
-        border-radius: 5px;
-        z-index: 1;
-        button {
-          margin-bottom: 7px;
-          padding: 10px;
-          border: 0.95px solid;
-          width: 100%;
+        a {
+            text-decoration: none;
+            color: inherit;
         }
-        .Login {
-          background-color: #000000;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 30px;
+            gap: 10px;
+
+            li {
+                list-style-type: none;
+                cursor: pointer;
+                color: #cfcfcf;
+                position: relative;
+                &:hover {
+                    text-decoration: none; /* Відміняємо вбудований підкреслювання */
+                }
+
+                &:hover::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px; /* Регулюйте відстань підкреслення від тексту */
+                    width: 40%;
+                    height: 2px;
+                    background-color: #735cff;
+                    border-radius: 5px;
+                }
+                &.active {
+                    color: #000;
+                }
+            }
+            @media (max-width: 772px) {
+                display: none;
+            }
         }
-        .SignUp {
-          background-color: #ffffff;
-          color: #000000;
+        .mobileMenu {
+            display: none;
+            position: relative;
+            // display: flex;
+            justify-content: center;
+            align-items: center;
+            nav {
+                display: none;
+            }
+            .open {
+                border-radius: 5px;
+                padding: 10px;
+                background-color: #cfcfcf;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 24px;
+                top: 160%;
+                right: -130%;
+                z-index: 100;
+            }
+            .burger {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 18px;
+                width: 22px;
+                span {
+                    height: 3px;
+                    width: 100%;
+                    background: #735cff;
+                    border-radius: 2px;
+                }
+            }
+            @media (max-width: 772px) {
+                display: flex;
+            }
         }
-      }
+        .designWatch {
+            @media (max-width: 772px) {
+                display: none;
+            }
+        }
+        .WrapImages {
+            display: flex;
+            align-items: center;
+            img {
+                margin-left: 30px;
+            }
+            .UserMenu {
+                text-align: center;
+                position: absolute;
+                top: 90%;
+                right: 8%;
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                padding: 30px;
+                border-radius: 5px;
+                z-index: 1;
+                button {
+                    margin-bottom: 7px;
+                    padding: 10px;
+                    border: 0.95px solid;
+                    width: 100%;
+                }
+                .Login {
+                    background-color: #000000;
+                }
+                .SignUp {
+                    background-color: #ffffff;
+                    color: #000000;
+                }
+            }
+        }
     }
-  }
 }
 @media (max-width: 993px) {
-  .WrapperHeader {padding-left: 20px; padding-right: 20px;}
-
+    .WrapperHeader {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 360px) {
+    .WrapperHeader {
+        justify-content: center;
+    }
 }

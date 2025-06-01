@@ -5,7 +5,7 @@ import FeaturesWatchesPhoto from "../Assets/Image/FeaturesWatch.png";
 import classnames from 'classnames';
 const Features = () => {
   return (
-    <div className={classnames(style.WrapperFeatures, style1.MainWrapper)}>
+    <div className={style.WrapperFeatures}>
       <h1>Features</h1>
       <div className={style.Features}>
         <div className={style.IndividualStyle}>

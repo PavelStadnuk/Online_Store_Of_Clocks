@@ -1,5 +1,6 @@
 .AllProducts {
-  margin-left: 50px;
+ margin-left: 5px;
+ margin-right: 5px;
   .SortBy {
     margin-top: 40px;
     width: 92%;
@@ -15,7 +16,7 @@
       margin-left: 15px;
       margin-top: 50px;
       width: 30%;
-      min-width: 350px;
+    min-width: 170px;
       text-align: center;
       .WrapperImgProduct {
         position: relative;
@@ -54,17 +55,28 @@
           opacity: 1;
         }
       }
-      
+      @media (max-width: 412px) {
+        min-width: 130px;
+}
+ @media (max-width: 375px) {
+        min-width: 100px;
+}
     }
   }
   .WrapperButtonPagination {
     margin-top: 80px;
-    padding-left: 65px;
-    width: 90%;
+    gap: 5px;
+    
+    width: 95%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     button {
-      padding: 20px;
+      padding: 10px;
+      @media (max-width: 327px) {
+        font-size: 10px;
+}
+      
     }
     .Pagination {
       span {
