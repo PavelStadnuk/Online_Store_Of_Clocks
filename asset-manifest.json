@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Online_Store_Of_Clocks/static/css/main.8e709298.css",
-    "main.js": "/Online_Store_Of_Clocks/static/js/main.92b72b1a.js",
+    "main.css": "/Online_Store_Of_Clocks/static/css/main.c011e43c.css",
+    "main.js": "/Online_Store_Of_Clocks/static/js/main.0d2a7b8e.js",
     "static/js/787.47822e57.chunk.js": "/Online_Store_Of_Clocks/static/js/787.47822e57.chunk.js",
     "static/media/BackgroundContuctUs.png": "/Online_Store_Of_Clocks/static/media/BackgroundContuctUs.00dc2f3686db96f466cd.png",
     "static/media/ImageMission.png": "/Online_Store_Of_Clocks/static/media/ImageMission.91fba548e71ab28b6439.png",
@@ -40,12 +40,12 @@
     "index.html": "/Online_Store_Of_Clocks/index.html",
     "static/media/cancle.svg": "/Online_Store_Of_Clocks/static/media/cancle.f5f14f589b9a5992a289220976e921d8.svg",
     "static/media/Pluse.svg": "/Online_Store_Of_Clocks/static/media/Pluse.6388def4d1add4ec96a00b19a4cff58d.svg",
-    "main.8e709298.css.map": "/Online_Store_Of_Clocks/static/css/main.8e709298.css.map",
-    "main.92b72b1a.js.map": "/Online_Store_Of_Clocks/static/js/main.92b72b1a.js.map",
+    "main.c011e43c.css.map": "/Online_Store_Of_Clocks/static/css/main.c011e43c.css.map",
+    "main.0d2a7b8e.js.map": "/Online_Store_Of_Clocks/static/js/main.0d2a7b8e.js.map",
     "787.47822e57.chunk.js.map": "/Online_Store_Of_Clocks/static/js/787.47822e57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e709298.css",
-    "static/js/main.92b72b1a.js"
+    "static/css/main.c011e43c.css",
+    "static/js/main.0d2a7b8e.js"
   ]
 }
